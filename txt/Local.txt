@@ -180,6 +180,16 @@ BTV国际频道,http://sweetown.fun:4000/rtp/239.3.1.235:8000
 龙游生活娱乐,http://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8
 
 江苏,#genre#
+江苏卫视,http://litchi-play-encrypted-site.jstv.com/live/jsws_live.m3u8?txSecret=109ff73927180e8bee18a1d54037acc8&txTime=968075ef
+江苏城市,http://litchi-play-encrypted-site.jstv.com/live/jscs_live.m3u8?txSecret=e0aaeba4cdb70773f5835ceb03874ea3&txTime=968075ef
+江苏综艺,http://litchi-play-encrypted-site.jstv.com/live/jszy_live.m3u8?txSecret=8f05e7dc3cbdce6388653eee3e086285&txTime=968075ef
+江苏影视,http://litchi-play-encrypted-site.jstv.com/live/jsys_live.m3u8?txSecret=63814fa9d9e10c2a9d00b009519ac226&txTime=968075ef
+江苏新闻,http://litchi-play-encrypted-site.jstv.com/live/jsxw_live.m3u8?txSecret=297f69f293b757c2729870eae335ab1c&txTime=968075ef
+江苏体育休闲,http://litchi-play-encrypted-site.jstv.com/live/jsxx_live.m3u8?txSecret=4f2e5bb49943d35e995127fd2b038f31&txTime=968075ef
+江苏教育,http://litchi-play-encrypted-site.jstv.com/live/jsjy_live.m3u8?txSecret=53a036f85e9d6d24f49f90aa7ec57824&txTime=968075ef
+江苏国际,http://litchi-play-encrypted-site.jstv.com/live/jsgj_live.m3u8?txSecret=688ca6f6effdc028d3b47f0fa5443146&txTime=968075ef
+优漫卡通,http://litchi-play-encrypted-site.jstv.com/live/ymkt_live.m3u8?txSecret=80350cef68569ae2c1947f73a0c1203b&txTime=968075ef
+
 江苏卫视,https://127.0.0.1:8080/jstv/jsws.m3u8
 江苏城市,https://127.0.0.1:8080/jstv/jscs.m3u8
 江苏新闻,https://127.0.0.1:8080/jstv/jsgg.m3u8
@@ -380,6 +390,13 @@ BTV国际频道,http://sweetown.fun:4000/rtp/239.3.1.235:8000
 象视界,https://127.0.0.1:8080/hntv/xsj.m3u8
 国学频道,https://127.0.0.1:8080/hntv/gxpd.m3u8
 
+郑州新闻综合,http://live3-new.zztv.tv/xwzh/playlist.m3u8
+郑州商都,http://live3-new.zztv.tv/sdpd/playlist.m3u8
+郑州文体旅游,http://live3-new.zztv.tv/wtly/playlist.m3u8
+郑州影视戏曲,http://live3-new.zztv.tv/xqpd/playlist.m3u8
+郑州妇女儿童,http://live3-new.zztv.tv/fnet/playlist.m3u8
+郑州都市生活,http://live3-new.zztv.tv/dssh/playlist.m3u8
+
 河北,#genre#
 河北卫视,https://tv.pull.hebtv.com/jishi/weishipindao.m3u8?t=1963555056&k=a2a2ee6412906c8b2d9a6fd19116c6d9
 河北经济,https://tv.pull.hebtv.com/jishi/jingjishenghuo.m3u8?t=1963555098&k=188078e4cff948b7252bb3e5f88306b2
@@ -511,6 +528,12 @@ BTV国际频道,http://sweetown.fun:4000/rtp/239.3.1.235:8000
 吉林公共新闻,https://127.0.0.1:8080/jlntv/jlggxw.m3u8
 吉林综艺文化,https://127.0.0.1:8080/jlntv/jlzywh.m3u8
 东北戏曲,https://127.0.0.1:8080/jlntv/dbxq.m3u8
+
+长春综合,http://p2bj.vzan.com/slowlive/763922717250086092/live.m3u8
+长春文旅体育,http://p2bj.vzan.com/slowlive/077592635708642635/live.m3u8
+长春市民生活,http://p2bj.vzan.com/slowlive/317775187203351257/live.m3u8
+长春经济,http://p2bj.vzan.com/slowlive/349780930188572439/live.m3u8
+长春汽车,http://p2bj.vzan.com/slowlive/978419341085239014/live.m3u8
 
 德惠综合,http://stream11.jlntv.cn/dehuitv/playlist.m3u8
 九台区电视台,http://stream10.jlntv.cn/jiutaitv/playlist.m3u8
