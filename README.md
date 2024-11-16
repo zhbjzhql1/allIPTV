@@ -89,7 +89,15 @@
 
 ---
 
+## 🌟 欢迎星标
+
 [![Star History Chart](https://api.star-history.com/svg?repos=lalifeier/IPTV&type=Date)](https://star-history.com/#lalifeier/IPTV)
+
+---
+
+## 💹 访问量统计
+
+![Visitor Count](https://profile-counter.glitch.me/lalifeier_IPTV/count.svg)
 
 ---
 
