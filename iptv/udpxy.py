@@ -137,11 +137,23 @@ class UDPxy(Base):
             logging.warning(f"No valid IP found in file: {ip_file_path}.")
             return None
 
+        invalid_ips = []
+        valid_ip = None
         for ip in valid_ips:
             if await self.is_url_accessible(
                 f"http://{ip}/status"
             ) and self.is_video_stream_valid(f"http://{ip}/udp/{mcast}"):
-                return ip
+                valid_ip =  ip
+                break
+            else:
+                invalid_ips.append(ip)
+
+        if invalid_ips:
+          with open(ip_file_path, "w", encoding="utf-8") as f:
+            f.write("\n".join([ip for ip in valid_ips if ip not in invalid_ips]))
+
+        if valid_ip:
+            return valid_ip
 
         logging.warning(f"No valid IP found after re-validation for {region}.")
         return None
