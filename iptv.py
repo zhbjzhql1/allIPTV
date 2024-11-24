@@ -26,7 +26,6 @@ def read_file_content(file_path):
         print(f"Error reading file {file_path}: {e}")
         return ""
 
-
 def write_to_file(file_path, content):
     try:
         with open(file_path, "w", encoding="utf-8") as file:
@@ -141,6 +140,8 @@ def main():
 
     write_to_file(os.path.join(M3U_DIR, 'Live.m3u'), live_m3u_content)
     logger.info("Successfully merged and saved Live.m3u file")
+
+    generate_youtube_txt()
 
     playlists = {
         "Hot": file_to_m3u("Hot.txt"),
@@ -275,6 +276,36 @@ def update_local_iptv_txt():
                 logging.error(f"Error writing to file {file_name}: {e}")
 
     logging.info("Finished updating all files.")
+
+def generate_youtube_txt():
+    try:
+        logging.info("Fetching README.md from GitHub...")
+        response = requests.get("https://mirror.ghproxy.com/https://raw.githubusercontent.com/ChiSheng9/iptv/refs/heads/master/README.md")
+        response.raise_for_status()
+        logging.info("README.md fetched successfully.")
+
+        content = response.text
+
+        logging.info("Replacing text pattern...")
+        pattern = r'(TV\d+),(.+)'
+        replacement = r'\2,https://raw.githubusercontent.com/ChiSheng9/iptv/master/\1.m3u8'
+        text = re.sub(pattern, replacement, content)
+        logging.info("Text pattern replaced successfully.")
+
+        text = text.replace('  ', '')
+
+        text = """
+YouTube「线路2」,#genre#
+""" + text
+
+        logging.info("Writing to Youtube.txt...")
+        write_to_file(os.path.join(TXT_DIR, "YouTube2.txt"), text)
+        logging.info("Youtube.txt written successfully.")
+
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Error fetching README.md: {e}")
+    except Exception as e:
+        logging.error(f"Error generating Youtube.txt: {e}")
 
 
 if __name__ == "__main__":
